@@ -17,4 +17,12 @@ class ApplicationController < ActionController::Base
   def set_cart
     @cart ||= Cart.new(session[:cart])
   end
+
+  def so_many_tacos
+    three_tacos = "taco taco taco"
+  end
+
+  def no_tacos
+    tacos = nill
+  end
 end
