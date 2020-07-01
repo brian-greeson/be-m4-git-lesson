@@ -18,6 +18,10 @@ class ApplicationController < ActionController::Base
     @cart ||= Cart.new(session[:cart])
   end
 
+  def love_tacos
+    @taco_tasty = true
+  end
+  
   def so_many_tacos
     three_tacos = "taco taco taco"
   end
